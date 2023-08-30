@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="icon" href="favicon-32x32.png">
+  <!-- bootstrap CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- google fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+  <section class="calculator text-center container-fluid">
+
+    <div class="display">
+      <input class="displaying-input" id="result" placeholder="Calculate" type="text" readonly size="18" >
+    </div>
+    <div class="keys">
+      <div class="row-1 rows">
+        <input class="7" type="button" value="7">
+        <input class="8" type="button" value="8">
+        <input class="9" type="button" value="9">
+        <input class="DEL" type="button" style="background-color: #7D8496;
+        color: white;" value="DEL">
+      </div>
+      <div class="row-2 rows">
+        <input class="4" type="button" value="4">
+        <input class="5" type="button" value="5">
+        <input class="6" type="button" value="6">
+        <input class="+" type="button" value="+">
+      </div>
+      <div class="row-3 rows">
+        <input class="1" type="button" value="1">
+        <input class="2" type="button" value="2">
+        <input class="3" type="button" value="3">
+        <input class="-" type="button" value="-">
+      </div>
+      <div class="row-4 rows">
+        <input class="." type="button" value=".">
+        <input class="0" type="button" value="0">
+        <input class="/" type="button" value="/">
+        <input class="*" type="button" value="*">
+      </div>
+      <div class="row-5 rows">
+        <input class="RESET" style="background-color: #7D8496;" type="button" value="RESET">
+        <input class="=" style="background-color: #ff3a3a" type="button" value="=">
+      </div>
+    </div>
+  </section>
+
+  <!-- Jquery CDN and index.js link -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+<footer>
+  <p style="text-align: center; color: white; margin-top: 3px;">Made by Ujjwal</p>
+</footer>
+</html>
